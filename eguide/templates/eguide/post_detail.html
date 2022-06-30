@@ -1,0 +1,510 @@
+{% extends 'base.html' %} 
+{% block content %}
+<div class="row">
+  <div class="col-sm-9 p-2">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th colspan="2" class="text-center">Общие сведения</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Регион</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Код района(города), код райгороргана ГПН(органа ГПН объекта)</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td >Номер карточки; основная(0), дополнительная(1-9)</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Дата возникновение пожара</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Вид населенного пункта,пожарной охраны населенного пункта</td>
+        <td>ф</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th colspan="2" class="text-center">II Объект Пожара</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">6</th>
+        <td>Форма собственности объекта пожара</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td>Организационно-правовая форма организаци</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td>Ведомственная принадлежность организации</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td>Тип предприятия, организации,учреждения</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">10</th>
+        <td>Объект пожара. Вид охраны объекта</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">11</th>
+        <td>Наименование объекта</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">11</th>
+        <td>Место возникновения пожара</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">12</th>
+        <td>Изделие,устройство,материал(источник возникновение пожара)</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">13</th>
+        <td>Причина пожара</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">14</th>
+        <td>Категория виновника пожара</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">15</th>
+        <td>Возраст виновника пожара</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">16</th>
+        <td>Результат дознания по пожару</td>
+        <td>ф</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th colspan="2" class="text-center">III Характеристика Объекта Пожара</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">17</th>
+        <td>Этажност здания</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">18</th>
+        <td>Степень огнестойкости здания</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">19</th>
+        <td>Площадь здания, противопожарного отсекаб квартиры</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">20</th>
+        <td>Стоимость здания</td>
+        <td>ф  сум</td>
+      </tr><tr>
+        <th scope="row">21</th>
+        <td>Стоимость материалных ценностей</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">22</th>
+        <td>Дата последнего детального обследования</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">23</th>
+        <td>Количество выявленных нарушений ППБ</td>
+        <td>ф</td>
+      </tr>
+      <tr>
+        <th scope="row">24</th>
+        <td>Расстояние до пожарой части</td>
+        <td>ф   км</td>
+      </tr>
+      <tr>
+        <th scope="row">25</th>
+        <td>Погибало людей</td>
+        <td>всего,,, из них детей ,,, работников ПО ,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">26</th>
+        <td>Трамвировано людей</td>
+        <td>всего,,, из них детей ,,, работников ПО ,,,</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th colspan="2" class="text-center">Материальный Ушерб от Пожара</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">27</th>
+        <td>Суммарный ушерб от пожара</td>
+        <td>ф  сум</td>
+      </tr>
+      <tr>
+        <th scope="row">28</th>
+        <td>По строению</td>
+        <td>ф  сум</td>
+      </tr>
+      <tr>
+        <th scope="row">29</th>
+        <td>По оборудованию,материаллам и имушеству</td>
+        <td>ф  сум</td>
+      </tr>    
+    </tbody>
+  </table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th colspan="2" class="text-center">Уничтожено, Повреждено Пожаром</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">30</th>
+        <td>Строений</td>
+        <td>уничтожено ,,,ед Ж: повреждено ,,,ед</td>
+      </tr>
+      <tr>
+        <th scope="row">31</th>
+        <td>Жилых квартир</td>
+        <td>уничтожено ,,,ед Ж: повреждено ,,,ед</td>
+      </tr>
+      <tr>
+        <th scope="row">32</th>
+        <td>Комнат</td>
+        <td>уничтожено ,,,ед Ж: повреждено ,,,ед</td>
+      </tr>
+      <tr>
+        <th scope="row">33</th>
+        <td>Поэтажной плошади</td>
+        <td>уничтожено ,,,квм Ж: повреждено ,,,квм</td>
+      </tr>
+      <tr>
+        <th scope="row">34</th>
+        <td>Автотракторной и др техники</td>
+        <td>уничтожено ,,,ед Ж: повреждено ,,,ед</td>
+      </tr>
+      <tr>
+        <th scope="row">35</th>
+        <td>Зерновых культур</td>
+        <td>уничтожено ,,,тонн Ж: повреждено ,,,тонн</td>
+      </tr>
+      <tr>
+        <th scope="row">36</th>
+        <td>Кормов</td>
+        <td>уничтожено ,,,тонн Ж: повреждено ,,,тонн</td>
+      </tr>
+      <tr>
+        <th scope="row">37</th>
+        <td>Зерновых культур на норню</td>
+        <td>уничтожено ,,,га Ж: повреждено ,,,га</td>
+      </tr>
+      <tr>
+        <th scope="row">38</th>
+        <td>Хлопок волокно и сырец</td>
+        <td>уничтожено ,,,кг Ж: повреждено ,,,кг</td>
+      </tr><tr>
+        <th scope="row">39</th>
+        <td>Скота</td>
+        <td>крупного ,,, голов</td>
+      </tr>
+      <tr>
+        <th scope="row">40</th>
+        <td>Скота</td>
+        <td>мелкого ,,, голов</td>
+      </tr>
+      <tr>
+        <th scope="row">41</th>
+        <td>Зверей и других животных</td>
+        <td>,,, голов</td>
+      </tr>
+      <tr>
+        <th scope="row">42</th>
+        <td>Птици</td>
+        <td>,,, штук</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th colspan="2" class="text-center">V Спасено на Пожаре</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">43</th>
+        <td>Людей</td>
+        <td>,,,человек</td>
+      </tr>
+      <tr>
+        <th scope="row">44</th>
+        <td>Скота</td>
+        <td>крупного,,,голов, мелкого,,,голов</td>
+      </tr>
+      <tr>
+        <th scope="row">45</th>
+        <td>Автотракторной и другой техники</td>
+        <td>,,,единиц</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th colspan="2" class="text-center"> VI Динамика Развития и Тущения Пожара</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">46</th>
+        <td>Время обраружение о пожаре</td>
+        <td>,,,час</td>
+      </tr>
+      <tr>
+        <th scope="row">47</th>
+        <td>Время собшения о пожаре</td>
+        <td>,,,час</td>
+      </tr>
+      <tr>
+        <th scope="row">48</th>
+        <td>Время прибытия на пожар 1-ого пож,подразделения</td>
+        <td>,,,час</td>
+      </tr>
+      <tr>
+        <th scope="row">49</th>
+        <td>Время локалозации пожара</td>
+        <td>,,,час</td>
+      </tr>
+      <tr>
+        <th scope="row">50</th>
+        <td>Время ликвидации пожара</td>
+        <td>,,,час</td>
+      </tr>
+      <tr>
+        <th scope="row">51</th>
+        <td>Дата ликвидации пожара</td>
+        <td>,,,год</td>
+      </tr>
+      <tr>
+        <th scope="row">52</th>
+        <td>Условия,способствовавшие развитию пожара</td>
+        <td>,,,</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th colspan="2" class="text-center"> VII Силы и Средство на Пожаре</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">53</th>
+        <td>Участники тушения пожара</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">54</th>
+        <td>Техника, использованная при тушении пожара</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">55</th>
+        <td>Количество пожарной техники</td>
+        <td>,,,единиц из них отказало техники ,,, единиц</td>
+      </tr>
+      <tr>
+        <th scope="row">56</th>
+        <td>подано пожарных стволов на тушение пожара</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">57</th>
+        <td>Количество поданных пожарных стволов</td>
+        <td>,,,единиц</td>
+      </tr>
+      <tr>
+        <th scope="row">58</th>
+        <td>Огнетушащие средства, применявшиеся для тушения пожара</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">59</th>
+        <td>Количество израсходованных огнетушащих средств при тушении пожара/td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">60</th>
+        <td>Первичные средства пожаротушения</td>
+        <td>,,,час</td>
+      </tr><tr>
+        <th scope="row">61</th>
+        <td>Водоснабжение на пожаре</td>
+        <td>,,,</td>
+      </tr><tr>
+        <th scope="row">62</th>
+        <td>Работа установок пожарной автоматики</td>
+        <td>,,,час</td>
+      </tr>
+      <tr>
+        <th scope="row">62.1</th>
+        <td>Го введения в експлутацию</td>
+        <td>,,,год</td>
+      </tr>
+      <tr>
+        <th scope="row">63</th>
+        <td>Руководитель тушения пожара</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">64</th>
+        <td>Выезд следственно-оперативной группы</td>
+        <td>,,,</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th colspan="2" class="text-center"> VIII Сведения о Погибших</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">65</th>
+        <td>Возраст погибшего лица</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">66</th>
+        <td>Пол погибшего лица </td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">67</th>
+        <td>Отношение погибшего лица к объекту пожара</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">68</th>
+        <td>Социальное положение, погибшего при пожаре лица</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">69</th>
+        <td>Семейное положение, погибшего при пожаре лица</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">70</th>
+        <td>Образование лица, погибшего при пожаре</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">71</th>
+        <td>Причина гибели людей при пожаре</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">72</th>
+        <td>Условия, способствовавшие гибели людей</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">73</th>
+        <td>Момент наступление смерти</td>
+        <td>,,,</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th colspan="2" class="text-center"> Сведения о Трамвированных</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">74</th>
+        <td>Возраст Трамвированного лица</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">75</th>
+        <td>Пол Трамвированного лица</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">76</th>
+        <td>Отношение Трамвированного лица к объекту пожара</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">77</th>
+        <td>ПУсловия, способствовавшие Трамвированию людей</td>
+        <td>,,,</td>
+      </tr>
+      <tr>
+        <th scope="row">78</th>
+        <td>Закрепление объекта(ФИО, должнлсть,звание)</td>
+        <td>,,,</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="col-sm-3">
+    <h3 class="text-center"> Фотографии из пожара</h3>
+    <img src="https://picsum.photos/seed/picsum/200/200" class="img-thumbnail mx-auto d-block" alt="...">
+    <img src="https://picsum.photos/seed/picsum/200/200" class="img-thumbnail mx-auto d-block" alt="...">
+    <img src="https://picsum.photos/seed/picsum/200/200" class="img-thumbnail mx-auto d-block" alt="...">
+  </div>
+</div>
+{% endblock content %}
