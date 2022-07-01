@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT emg:app
+web: gunicorn emg.wsgi:application --log-file - --log-level debug
