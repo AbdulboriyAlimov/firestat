@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-fveq@5lv^-6nej^@8_t7!i*f2##yhqj2p=!rge#qkttq#dc&15
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['firestatuz.herokuapp.com']
 """LOCALE_PATHS = [
     BASE_DIR  /'locale/',
 ]"""
