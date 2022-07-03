@@ -1,3 +1,5 @@
 gunicorn
 django-jazzmin
 django
+django-translation-manager
+matplotlib
