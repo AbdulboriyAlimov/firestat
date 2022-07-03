@@ -1,1 +1,1 @@
-web:gunicorn emg.wsgi
+heroku ps:scale web=1
